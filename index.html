@@ -8,6 +8,52 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <div class="image-container">
+            <img src="assets/img/image_skyline.jpg" alt="Skyline above a building">
+            <div class="logo">
+                <img src="assets/img/odin-lined.png" alt="Odin project logo">
+                <h1>Odin</h1>
+            </div>
+        </div>
+
+        <section>
+            <div class="text-content">
+                <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.
+                    Sign up <i>now</i> to get started.
+                </p>
+                <p>You <i>know</i> you want to</p>
+            </div>
+
+            <form action="" method="post">
+                <div class="input-container">
+                    <label for="first-name">First name*</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name*" required>
+                </div>
+                <div class="input-container">
+                    <label for="surname">Surname*</label>
+                    <input type="text" name="surname" id="surname" placeholder="Surname*" required>
+                </div>   
+                <div class="input-container">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" placeholder="Email*" required>
+                </div>
+                <div class="input-container"> 
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="Phone number">
+                </div> 
+                <div class="input-container">
+                    <label for="password">Password*</label>
+                    <input type="password" name="password" id="password*" placeholder="Password" minlength="6" required>
+                </div>
+                <div class="input-container"> 
+                    <label for="confirm-pwd">Confirm password*</label>
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm password*" minlength="6" required>
+                </div>
+            </form>
+            <button type="submit">Create Account</button>
+            <p><a href=""></a></p>
+        </section>
+    </main>
 </body>
 </html>
