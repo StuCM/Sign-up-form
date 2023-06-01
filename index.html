@@ -26,20 +26,32 @@
             </div>
 
             <form action="" method="post">
-                <label for="first-name">First name*</label>
-                <input type="text" name="first-name" id="first-name" placeholder="First Name*" required>
-                <label for="surname">Surname*</label>
-                <input type="text" name="surname" id="surname" placeholder="Surname*" required>
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="email" placeholder="Email*" required>
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="Phone number">
-                <label for="password">Password*</label>
-                <input type="password" name="password" id="password*" placeholder="Password" minlength="6" required>
-                <label for="confirm-pwd">Confirm password*</label>
-                <input type="password" name="confirm" id="confirm" placeholder="Confirm password*" minlength="6" required>
-                <button type="submit">Create Account</button>
+                <div class="input-container">
+                    <label for="first-name">First name*</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name*" required>
+                </div>
+                <div class="input-container">
+                    <label for="surname">Surname*</label>
+                    <input type="text" name="surname" id="surname" placeholder="Surname*" required>
+                </div>   
+                <div class="input-container">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" placeholder="Email*" required>
+                </div>
+                <div class="input-container"> 
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="Phone number">
+                </div> 
+                <div class="input-container">
+                    <label for="password">Password*</label>
+                    <input type="password" name="password" id="password*" placeholder="Password" minlength="6" required>
+                </div>
+                <div class="input-container"> 
+                    <label for="confirm-pwd">Confirm password*</label>
+                    <input type="password" name="confirm" id="confirm" placeholder="Confirm password*" minlength="6" required>
+                </div>
             </form>
+            <button type="submit">Create Account</button>
             <p><a href=""></a></p>
         </section>
     </main>

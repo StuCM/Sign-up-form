@@ -95,8 +95,7 @@ section {
 }
 
 form {
-    padding: 1.2rem;
-    margin-bottom: 3rem;
+    padding: 1.2rem 1.2rem 2.5rem;
     box-shadow:  13px 13px 26px #ab90cb,
                 -13px -13px 26px #e3c0ff;
 }
@@ -161,7 +160,7 @@ button {
     font: inherit;
     font-size: 1rem;
     padding: 1.2rem;
-    margin: 2.5rem auto 1rem auto;
+    margin: 2.5rem auto 2.5rem auto;
     color: #e6dcf3;
     background: linear-gradient(145deg, #855bb7, #7b55aa);
     box-shadow:  5px 5px 11px #a98fc9,
@@ -171,15 +170,68 @@ button {
     width: 60%;
 }
 
-/*button:hover{
-    background: linear-gradient(145deg, #7c4db6, #6e41a5);
-}
-
-button:focus{
-    box-shadow: inset 6px 6px 12px #694891,
-    inset -6px -6px 12px #8f62c5;
-}*/
-
 button:visited{
     box-shadow: none;
+}
+
+@media only screen and (min-width: 769px) {
+    main {
+        display: flex;
+        height: 90vh;
+    }
+
+    .image-container {
+        height: 100%;
+        max-width: 35%;
+    }
+    img {
+        width: auto;
+    }
+    .logo {
+        height: 15%;
+        top: 30%;
+    }
+    section {
+        max-width: 65%;
+        text-align: left;
+    }
+    .text-content {
+        padding: 0.5rem 2rem;
+        margin: 3rem 0 2rem 0;
+        font-size: 1.5rem;
+    }
+    p, i {
+        font-size: 1.2rem;
+
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    label {
+        margin-top: 1rem;
+    }
+
+    .input-container{
+        width: 50%;
+        text-align: center;
+    }
+
+    button {
+        width: max(30%, 160px);
+        margin-left: 2rem;
+    }
+
+    button:hover{
+    background: linear-gradient(145deg, #7c4db6, #6e41a5);
+    }
+
+    button:active{
+        box-shadow: inset 6px 6px 12px #694891,
+        inset -6px -6px 12px #8f62c5;
+    }
 }
